@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "mtsamples"
+version = "0.0.1"
+description = "A package to scrape and clean medical transcription samples from mtsamples.com"
+authors = ["Lucy M. Li <lucy@feature.health>"]
+data-timestamp = "Jun 17, 2024 10:54 PDT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.32.2"
+beautifulsoup4 = "^4.12.3"
+tqdm = "^4.66.4"
+pandas = "^2.2.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+coverage = "^6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["python", "mtsamples", "scraping", "cleaning"]
+
+[project.urls]
+Homepage = "https://github.com/featurehealth/mtsamples"
+Issues = "https://github.com/featurehealth/mtsamples/issues"
